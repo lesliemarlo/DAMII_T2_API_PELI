@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B73F4F062CF62198005B9CF1 /* LeslieMarlo_PeliculasAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F052CF62198005B9CF1 /* LeslieMarlo_PeliculasAppApp.swift */; };
+		B73F4F082CF62198005B9CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F072CF62198005B9CF1 /* ContentView.swift */; };
+		B73F4F0A2CF62199005B9CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73F4F092CF62199005B9CF1 /* Assets.xcassets */; };
+		B73F4F0D2CF62199005B9CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73F4F0C2CF62199005B9CF1 /* Preview Assets.xcassets */; };
+		B73F4F192CF621FF005B9CF1 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F182CF621FF005B9CF1 /* APIResponse.swift */; };
+		B73F4F1B2CF62214005B9CF1 /* PeliculaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F1A2CF62214005B9CF1 /* PeliculaService.swift */; };
+		B73F4F1D2CF62230005B9CF1 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F1C2CF62230005B9CF1 /* HttpRequestHelper.swift */; };
+		B73F4F1F2CF62248005B9CF1 /* PeliculaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F1E2CF62248005B9CF1 /* PeliculaListViewModel.swift */; };
+		B73F4F212CF62259005B9CF1 /* PeliculaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4F202CF62259005B9CF1 /* PeliculaListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B73F4F022CF62198005B9CF1 /* LeslieMarlo_PeliculasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeslieMarlo_PeliculasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F4F052CF62198005B9CF1 /* LeslieMarlo_PeliculasAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeslieMarlo_PeliculasAppApp.swift; sourceTree = "<group>"; };
+		B73F4F072CF62198005B9CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B73F4F092CF62199005B9CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B73F4F0C2CF62199005B9CF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B73F4F182CF621FF005B9CF1 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		B73F4F1A2CF62214005B9CF1 /* PeliculaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaService.swift; sourceTree = "<group>"; };
+		B73F4F1C2CF62230005B9CF1 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		B73F4F1E2CF62248005B9CF1 /* PeliculaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaListViewModel.swift; sourceTree = "<group>"; };
+		B73F4F202CF62259005B9CF1 /* PeliculaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B73F4EFF2CF62198005B9CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B73F4EF92CF62198005B9CF1 = {
+			isa = PBXGroup;
+			children = (
+				B73F4F042CF62198005B9CF1 /* LeslieMarlo_PeliculasApp */,
+				B73F4F032CF62198005B9CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B73F4F032CF62198005B9CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F022CF62198005B9CF1 /* LeslieMarlo_PeliculasApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B73F4F042CF62198005B9CF1 /* LeslieMarlo_PeliculasApp */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F172CF621E3005B9CF1 /* Models */,
+				B73F4F162CF621D8005B9CF1 /* Views */,
+				B73F4F152CF621CB005B9CF1 /* ViewModels */,
+				B73F4F142CF621AD005B9CF1 /* Services */,
+				B73F4F132CF621A2005B9CF1 /* Helpers */,
+				B73F4F052CF62198005B9CF1 /* LeslieMarlo_PeliculasAppApp.swift */,
+				B73F4F072CF62198005B9CF1 /* ContentView.swift */,
+				B73F4F092CF62199005B9CF1 /* Assets.xcassets */,
+				B73F4F0B2CF62199005B9CF1 /* Preview Content */,
+			);
+			path = LeslieMarlo_PeliculasApp;
+			sourceTree = "<group>";
+		};
+		B73F4F0B2CF62199005B9CF1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F0C2CF62199005B9CF1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B73F4F132CF621A2005B9CF1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F1C2CF62230005B9CF1 /* HttpRequestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B73F4F142CF621AD005B9CF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F1A2CF62214005B9CF1 /* PeliculaService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B73F4F152CF621CB005B9CF1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F1E2CF62248005B9CF1 /* PeliculaListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B73F4F162CF621D8005B9CF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F202CF62259005B9CF1 /* PeliculaListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B73F4F172CF621E3005B9CF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4F182CF621FF005B9CF1 /* APIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B73F4F012CF62198005B9CF1 /* LeslieMarlo_PeliculasApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B73F4F102CF62199005B9CF1 /* Build configuration list for PBXNativeTarget "LeslieMarlo_PeliculasApp" */;
+			buildPhases = (
+				B73F4EFE2CF62198005B9CF1 /* Sources */,
+				B73F4EFF2CF62198005B9CF1 /* Frameworks */,
+				B73F4F002CF62198005B9CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeslieMarlo_PeliculasApp;
+			productName = LeslieMarlo_PeliculasApp;
+			productReference = B73F4F022CF62198005B9CF1 /* LeslieMarlo_PeliculasApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B73F4EFA2CF62198005B9CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B73F4F012CF62198005B9CF1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B73F4EFD2CF62198005B9CF1 /* Build configuration list for PBXProject "LeslieMarlo_PeliculasApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B73F4EF92CF62198005B9CF1;
+			productRefGroup = B73F4F032CF62198005B9CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B73F4F012CF62198005B9CF1 /* LeslieMarlo_PeliculasApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B73F4F002CF62198005B9CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73F4F0D2CF62199005B9CF1 /* Preview Assets.xcassets in Resources */,
+				B73F4F0A2CF62199005B9CF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B73F4EFE2CF62198005B9CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73F4F1D2CF62230005B9CF1 /* HttpRequestHelper.swift in Sources */,
+				B73F4F1B2CF62214005B9CF1 /* PeliculaService.swift in Sources */,
+				B73F4F082CF62198005B9CF1 /* ContentView.swift in Sources */,
+				B73F4F062CF62198005B9CF1 /* LeslieMarlo_PeliculasAppApp.swift in Sources */,
+				B73F4F192CF621FF005B9CF1 /* APIResponse.swift in Sources */,
+				B73F4F212CF62259005B9CF1 /* PeliculaListView.swift in Sources */,
+				B73F4F1F2CF62248005B9CF1 /* PeliculaListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B73F4F0E2CF62199005B9CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B73F4F0F2CF62199005B9CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B73F4F112CF62199005B9CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeslieMarlo_PeliculasApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.cibertec.LeslieMarlo-PeliculasApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B73F4F122CF62199005B9CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeslieMarlo_PeliculasApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.cibertec.LeslieMarlo-PeliculasApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B73F4EFD2CF62198005B9CF1 /* Build configuration list for PBXProject "LeslieMarlo_PeliculasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B73F4F0E2CF62199005B9CF1 /* Debug */,
+				B73F4F0F2CF62199005B9CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B73F4F102CF62199005B9CF1 /* Build configuration list for PBXNativeTarget "LeslieMarlo_PeliculasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B73F4F112CF62199005B9CF1 /* Debug */,
+				B73F4F122CF62199005B9CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B73F4EFA2CF62198005B9CF1 /* Project object */;
+}
